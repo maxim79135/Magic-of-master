@@ -1,0 +1,20 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'application'
+
+mainClassName = 'lab.Main'
+
+repositories {
+    mavenCentral()
+}
+
+configurations {
+    provided
+    embedded
+    compile.extendsFrom provided, embedded
+}
+
+dependencies {
+    implementation fileTree('libs')
+    implementation 'com.google.guava:guava:31.0.1-jre'
+}
