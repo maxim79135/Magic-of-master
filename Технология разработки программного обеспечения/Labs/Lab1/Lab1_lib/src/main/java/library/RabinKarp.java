@@ -1,6 +1,6 @@
 package library;
 
-import java.util.ArrayList;
+import java.util.Vector;
 
 public class RabinKarp {
     public final static int d = 10;
@@ -14,7 +14,7 @@ public class RabinKarp {
         this.q = q;
     }
 
-    public ArrayList<Integer> search() {
+    public Vector<Integer> search() {
         int m = substr.length();
         int n = str.length();
         int i, j;
@@ -22,7 +22,7 @@ public class RabinKarp {
         int t = 0;
         int h = 1;
 
-        ArrayList<Integer> res = new ArrayList<>();
+        Vector<Integer> res = new Vector<>();
 
         for (i = 0; i < m - 1; i++)
             h = (h * d) % q;

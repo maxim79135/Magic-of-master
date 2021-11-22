@@ -1,6 +1,6 @@
 package library;
 
-import java.util.ArrayList;
+import java.util.Vector;
 
 public class KMT {
 
@@ -27,8 +27,8 @@ public class KMT {
         return pi;
     }
 
-    public ArrayList<Integer> search() {
-        ArrayList<Integer> res = new ArrayList<>();
+    public Vector<Integer> search() {
+        Vector<Integer> res = new Vector<>();
         int[] pi = getPrefixes(substr.concat("#").concat(str));
         for (int i = 0; i < str.length(); i++) {
             if (pi[substr.length() + i + 1] == substr.length())
