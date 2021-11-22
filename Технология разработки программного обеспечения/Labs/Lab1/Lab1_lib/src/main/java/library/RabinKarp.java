@@ -18,7 +18,9 @@ public class RabinKarp {
         int m = substr.length();
         int n = str.length();
         int i, j;
-        int p = 0, t = 0, h = 1;
+        int p = 0;
+        int t = 0;
+        int h = 1;
 
         ArrayList<Integer> res = new ArrayList<>();
 
