@@ -2,8 +2,6 @@ apply plugin: 'java'
 apply plugin: 'idea'
 apply plugin: 'application'
 
-mainClassName = 'lab.Main'
-
 repositories {
     mavenCentral()
 }
@@ -12,6 +10,14 @@ configurations {
     provided
     embedded
     compile.extendsFrom provided, embedded
+}
+
+run {
+    standardInput = System.in
+}
+
+application {
+    mainClassName = 'lab.Main'
 }
 
 dependencies {
