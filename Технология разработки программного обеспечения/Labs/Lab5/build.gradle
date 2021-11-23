@@ -24,7 +24,13 @@ tasks.withType(JavaCompile) {
 
 application {
     mainModule = 'lab.lab5'
-    mainClass = 'lab.lab5.HelloApplication'
+    mainClass = 'lab.lab5.Lab5'
+}
+
+configurations {
+    provided
+    embedded
+    compile.extendsFrom provided, embedded
 }
 
 javafx {
@@ -33,7 +39,7 @@ javafx {
 }
 
 dependencies {
-
+    implementation fileTree('libs')
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
 }
