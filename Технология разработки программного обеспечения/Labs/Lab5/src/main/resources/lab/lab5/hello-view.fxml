@@ -1,57 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
 <TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
          prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.2"
-         xmlns:fx="http://javafx.com/fxml/1"
-         fx:controller="lab.lab5.MainController">
+         xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab.lab5.MainController">
     <Tab text="RabinKarp">
         <VBox alignment="CENTER">
             <HBox alignment="CENTER">
-                <Label text="First string" minWidth="150"/>
-                <TextField minWidth="250" fx:id="rabinKarpText1"/>
+                <Label minWidth="150" text="First string"/>
+                <TextField fx:id="rabinKarpText1" minWidth="250"/>
             </HBox>
             <HBox alignment="CENTER">
-                <Label text="Second string" minWidth="150"/>
-                <TextField minWidth="250" fx:id="rabinKarpText2"/>
+                <Label minWidth="150" text="Second string"/>
+                <TextField fx:id="rabinKarpText2" minWidth="250"/>
             </HBox>
             <HBox alignment="CENTER">
-                <Label text="Result" minWidth="150"/>
+                <Label minWidth="150" text="Result">
+                    <HBox.margin>
+                        <Insets top="20.0"/>
+                    </HBox.margin>
+                </Label>
                 <Label fx:id="resultText1" minWidth="250"/>
             </HBox>
-            <Button text="Calculate" onAction="#onResult1ButtonClick" userData="rabinKarp"/>
+            <Button onAction="#onResult1ButtonClick" text="Calculate" userData="rabinKarp"/>
         </VBox>
     </Tab>
     <Tab text="KMT">
         <VBox alignment="CENTER">
             <HBox alignment="CENTER">
-                <Label text="First string" minWidth="150"/>
-                <TextField minWidth="250" fx:id="KMTText1"/>
+                <Label minWidth="150" text="First string"/>
+                <TextField fx:id="KMTText1" minWidth="250"/>
             </HBox>
             <HBox alignment="CENTER">
-                <Label text="Second string" minWidth="150"/>
-                <TextField minWidth="250" fx:id="KMTText2"/>
+                <Label minWidth="150" text="Second string"/>
+                <TextField fx:id="KMTText2" minWidth="250"/>
             </HBox>
             <HBox alignment="CENTER">
-                <Label text="Result" minWidth="150"/>
+                <Label minWidth="150" text="Result">
+                    <HBox.margin>
+                        <Insets top="20.0"/>
+                    </HBox.margin>
+                </Label>
                 <Label fx:id="resultText2" minWidth="250"/>
             </HBox>
-            <Button text="Calculate" onAction="#onResult1ButtonClick" userData="KMT"/>
+            <Button onAction="#onResult1ButtonClick" text="Calculate" userData="KMT"/>
         </VBox>
     </Tab>
     <Tab text="ZFunction">
         <VBox alignment="CENTER">
             <HBox alignment="CENTER">
-                <Label text="String" minWidth="150"/>
-                <TextField minWidth="250" fx:id="zFunctionText1"/>
+                <Label minWidth="150" text="String"/>
+                <TextField fx:id="zFunctionText1" minWidth="250"/>
             </HBox>
             <HBox alignment="CENTER">
-                <Label text="Result" minWidth="150"/>
+                <Label minWidth="150" text="Result">
+                    <HBox.margin>
+                        <Insets top="20.0"/>
+                    </HBox.margin>
+                </Label>
                 <Label fx:id="resultText3" minWidth="250"/>
             </HBox>
-            <Button text="Calculate" onAction="#onResult1ButtonClick" userData="zFunction"/>
+            <Button onAction="#onResult1ButtonClick" text="Calculate" userData="zFunction"/>
         </VBox>
     </Tab>
 </TabPane>
