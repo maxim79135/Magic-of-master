@@ -19,7 +19,7 @@
             </HBox>
             <HBox alignment="CENTER">
                 <Label text="Result" minWidth="150"/>
-                <Label fx:id="resultText1"/>
+                <Label fx:id="resultText1" minWidth="250"/>
             </HBox>
             <Button text="Calculate" onAction="#onResult1ButtonClick" userData="rabinKarp"/>
         </VBox>
@@ -36,7 +36,7 @@
             </HBox>
             <HBox alignment="CENTER">
                 <Label text="Result" minWidth="150"/>
-                <Label fx:id="resultText2"/>
+                <Label fx:id="resultText2" minWidth="250"/>
             </HBox>
             <Button text="Calculate" onAction="#onResult1ButtonClick" userData="KMT"/>
         </VBox>
@@ -49,7 +49,7 @@
             </HBox>
             <HBox alignment="CENTER">
                 <Label text="Result" minWidth="150"/>
-                <Label fx:id="resultText3"/>
+                <Label fx:id="resultText3" minWidth="250"/>
             </HBox>
             <Button text="Calculate" onAction="#onResult1ButtonClick" userData="zFunction"/>
         </VBox>
