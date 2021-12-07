@@ -1,0 +1,1 @@
+"D:\Program Files\AdoptOpenJDK\bin"\java -cp "D:\Program Files\IntelliJ IDEA 2021.2.3\plugins\java-decompiler\lib\java-decompiler.jar" org.jetbrains.java.decompiler.main.decompiler.ConsoleDecompiler -dgs=true class_files test_decompile

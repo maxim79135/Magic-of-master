@@ -12,3 +12,7 @@ tasks.named('jar') {
                 'Implementation-Version': project.version)
     }
 }
+
+dependencies {
+    implementation 'com.guardsquare:proguard-gradle:7.1.1'
+}
